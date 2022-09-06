@@ -24,6 +24,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            height: 100vh;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         h2 {
@@ -134,17 +139,12 @@
         }
 
         /*education*/
-        .education {
+        .education, .footer {
             text-align: center;
         }
 
         .uni {
             width: 300px;
-        }
-
-            {
-            display: flex;
-            justify-content: space-evenly;
         }
 
         /*contact*/
@@ -159,6 +159,23 @@
         #contactForm {
             width: 80%;
         }
+
+        /*footer*/
+        .footer {
+            background-color: rgb(39, 39, 39)
+        }
+
+        .footer-text {
+            color: #fff;
+    
+        }
+
+        .footer-icon {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 20px;
+        }
+       
     </style>
 </head>
 
@@ -186,7 +203,7 @@
                       <a class="dropdown-item" href="#books-section">Books</a>
                       <a class="dropdown-item" href="#hellpress-section">Hellpress</a>
                       <a class="dropdown-item" href="#netflix-section">Netflix</a>
-                      <a class="dropdown-item" href="#comics-section">Comics</a>
+                      <a class="dropdown-item" href="#plot-section">Plot 2.0</a>
                     </div>
                   </li>
                 <li class="nav-item">
@@ -404,7 +421,7 @@
     </div>
 </section>
 
-<section id="comics-section">
+<section id="plot-section">
     <div class="other_container">
         <div class="other_inner_text">
             <h2>Comics</h2>
@@ -546,6 +563,21 @@
         </div>
 
     </section>
+
+    <section id="footer-section">
+        <div class="footer">
+            <br>
+            <p class="footer-text">Copyright &#169; <span class="year">2002</span> | Miguel Sanz Jiménez</p>
+            <img class="footer-icon" src="favicon.ico" alt="icon">
+        </div>
+    </section>
+    
+    <script>
+        const year = document.querySelector('.year');
+        const currentYear = new Date().getFullYear();
+        year.innerHTML = currentYear;
+    </script>
 </body>
 
 </html>
+
