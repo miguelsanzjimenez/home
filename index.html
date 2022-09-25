@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Miguel Sanz Jiménez</title>
+
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!-- CSS only -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
@@ -19,6 +20,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8efc22d7af.js" crossorigin="anonymous"></script>
     <style>
         body {
             margin: 0;
@@ -56,6 +58,7 @@
         .media,
         .contact_container {
             background-color: rgb(212, 241, 253);
+
         }
 
         .about_info {
@@ -66,6 +69,52 @@
         .button_container {
             text-align: center;
         }
+
+        .about-photos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .about-img {
+            margin-top: 15px;
+            width: 280px;
+        }
+
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .gallery-btn {
+            background-color: #007bff;
+            border: none;
+            height: 40px;
+            width: 50%;
+            padding: 0 20px;
+            border-radius: 10px;
+            margin: 15px 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .next {
+            padding: 0 32px;
+        }
+
+        .gallery-btn:hover {
+            background-color: #0069da;
+            cursor: pointer;
+        }
+
+        .gallery-text {
+            margin-top: 10px;
+        }
+
 
         /*translations*/
         .translation_title {
@@ -108,6 +157,8 @@
             margin-bottom: 1rem;
         }
 
+
+
         .carousel {
             width: 300px;
         }
@@ -139,7 +190,8 @@
         }
 
         /*education*/
-        .education, .footer {
+        .education,
+        .footer {
             text-align: center;
         }
 
@@ -167,7 +219,7 @@
 
         .footer-text {
             color: #fff;
-    
+
         }
 
         .footer-icon {
@@ -175,7 +227,6 @@
             height: 20px;
             margin-bottom: 20px;
         }
-       
     </style>
 </head>
 
@@ -196,16 +247,17 @@
                     <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Translations
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Translations
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#books-section">Books</a>
-                      <a class="dropdown-item" href="#hellpress-section">Hellpress</a>
-                      <a class="dropdown-item" href="#netflix-section">Netflix</a>
-                      <a class="dropdown-item" href="#plot-section">Plot 2.0</a>
+                        <a class="dropdown-item" href="#books-section">Books</a>
+                        <a class="dropdown-item" href="#hellpress-section">Hellpress</a>
+                        <a class="dropdown-item" href="#netflix-section">Netflix</a>
+                        <a class="dropdown-item" href="#plot-section">Plot 2.0</a>
                     </div>
-                  </li>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#media-section">Media</a>
                 </li>
@@ -250,7 +302,8 @@
                     Traducción y
                     ha publicado en diversas revistas. Ha traducido subtítulos, relatos, ensayo y novelas. Por ejemplo,
                     tradujo al castellano
-                    <i>El pájaro carpintero</i> (James McBride, 2017) y <i>Maldito asfalto</i> (S. A. Cosby, 2022).</p><br>
+                    <i>El pájaro carpintero</i> (James McBride, 2017) y <i>Maldito asfalto</i> (S. A. Cosby, 2022).
+                </p><br>
                 <div class="button_container">
                     <a href="https://dialnet.unirioja.es/servlet/autor?codigo=4381574" target="_blank"><button
                             class="btn btn-primary btn-lg">Perfil de Dialnet</button> </a><br>
@@ -279,7 +332,8 @@
                     journals. His work as a
                     freelance translator includes subtitles, short stories, nonfiction, and novels. For example, he is
                     responsible for the Spanish
-                    renderings of James McBride’s <i>The Good Lord Bird</i> (2017) and S. A. Cosby’s <i>Blacktop Wasteland</i> (2022).
+                    renderings of James McBride’s <i>The Good Lord Bird</i> (2017) and S. A. Cosby’s <i>Blacktop
+                        Wasteland</i> (2022).
                 </p>
                 <div class="button_container">
                     <a href="https://orcid.org/0000-0001-7720-2004" target="_blank"><button
@@ -287,7 +341,23 @@
                 </div>
 
             </div>
+            <div class="about about-photos">
+                <div class="about-photos-top-container">
+                    <h2>Gallery</h2>
+
+                    <img class="about-img" src="about-img-1.JPG" alt="about-1">
+
+
+                </div>
+
+                <p class="gallery-text">Dr. Sanz Jiménez discusses his research at the University of Málaga</p>
+                <div class="btn-container">
+                    <button class="gallery-btn prev">Previous</button>
+                    <button class="gallery-btn next">Next</button>
+                </div>
+            </div>
         </div>
+
 
     </section>
 
@@ -388,54 +458,59 @@
             </div>
         </div>
     </section>
-<section id="hellpress-section">
-    <div class="other_container">
-        <div class="other_inner_text">
-            <h2>Hellpress</h2>
-            <p>Dr. Sanz Jiménez has collaborated with <i>Hellpress.com</i>, a Heavy Metal and Hard Rock news website. He has
-                translated many interviews with international metal musicians into Spanish. More of his interviews can
-                be found <a href="https://www.hellpress.com/?s=%22sanz+jim%C3%A9nez%22" target="blank">here</a>.</p>
-        </div>
+    <section id="hellpress-section">
+        <div class="other_container">
+            <div class="other_inner_text">
+                <h2>Hellpress</h2>
+                <p>Dr. Sanz Jiménez has collaborated with <i>Hellpress.com</i>, a Heavy Metal and Hard Rock news
+                    website. He has
+                    translated many interviews with international metal musicians into Spanish. More of his interviews
+                    can
+                    be found <a href="https://www.hellpress.com/?s=%22sanz+jim%C3%A9nez%22" target="blank">here</a>.</p>
+            </div>
 
-        <div class="other_inner_pic">
-            <br>
-            <br>
-            <a href="https://www.hellpress.com/?s=%22sanz+jim%C3%A9nez%22" target="blank"><img class="other-pic" src="hellpress1.png" alt="hellpress"></a>
+            <div class="other_inner_pic">
+                <br>
+                <br>
+                <a href="https://www.hellpress.com/?s=%22sanz+jim%C3%A9nez%22" target="blank"><img class="other-pic"
+                        src="hellpress1.png" alt="hellpress"></a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="netflix-section">
-    <div class="other_container">
-        <div class="other_inner_text">
-            <h2>Netflix</h2>
-            <p>Additionally, he has translated subtitles for Netflix, the leading streaming service. The TV shows he has
-                translated include the true crime <em>Fatal Attaction</em>. </p>
-        </div>
+    <section id="netflix-section">
+        <div class="other_container">
+            <div class="other_inner_text">
+                <h2>Netflix</h2>
+                <p>Additionally, he has translated subtitles for Netflix, the leading streaming service. The TV shows he
+                    has
+                    translated include the true crime <em>Fatal Attaction</em>. </p>
+            </div>
 
-        <div class="other_inner_pic">
-            <br>
-            <br>
-            <a href="subtitulos.JPG" target="blank"><img class="other-pic" src="subtitulos.JPG" alt="subtitles"></a>
+            <div class="other_inner_pic">
+                <br>
+                <br>
+                <a href="subtitulos.JPG" target="blank"><img class="other-pic" src="subtitulos.JPG" alt="subtitles"></a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="plot-section">
-    <div class="other_container">
-        <div class="other_inner_text">
-            <h2>Comics</h2>
-            <p>Dr. Sanz Jiménez has shown interest in comic-books. For the magazine <i>Plot 2.0.</i>, he has translated comic
-                strips and interviews with renowned cartoonists. </p>
-        </div>
+    <section id="plot-section">
+        <div class="other_container">
+            <div class="other_inner_text">
+                <h2>Comics</h2>
+                <p>Dr. Sanz Jiménez has shown interest in comic-books. For the magazine <i>Plot 2.0.</i>, he has
+                    translated comic
+                    strips and interviews with renowned cartoonists. </p>
+            </div>
 
-        <div class="other_inner_pic">
-            <br>
-            <br>
-            <a href="dateline.jpg" target="blank"><img class="other-pic" src="dateline.jpg" alt="dateline"></a>
+            <div class="other_inner_pic">
+                <br>
+                <br>
+                <a href="dateline.jpg" target="blank"><img class="other-pic" src="dateline.jpg" alt="dateline"></a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -447,14 +522,27 @@
                 <h2>Media</h2>
                 <p>Dr. Sanz Jiménez has appeared in various articles and podcasts.</p>
                 <div class="media_container">
+
                     <div class="media_int">
                         <a href="https://elpais.com/cultura/elemental/2022-07-29/la-mejor-lectura-de-verano-20-novelas-negras-analizadas-y-comentadas.html"
                             target="_blank"><img class="media_btn" src="elpais.png" alt="elpais"></a>
                         <h2>El País</h2>
                         <a class="article_link"
-                            href="https://elpais.com/cultura/elemental/2022-07-29/la-mejor-lectura-de-verano-20-novelas-negras-analizadas-y-comentadas.html">La
+                            href="https://elpais.com/cultura/elemental/2022-07-29/la-mejor-lectura-de-verano-20-novelas-negras-analizadas-y-comentadas.html" target="_blank">La
                             mejor lectura de verano: 20 novelas <br>negras analizadas y comentadas <br>(July 28,
                             2022)</a>
+
+                    </div>
+
+
+                    <div class="media_int">
+                        <a href="https://www.rtve.es/play/videos/pagina-dos/antonio-lucas/6217674/"
+                            target="_blank"><img class="media_btn" src="pagina-dos.jpeg" alt="pagina-dos"></a>
+                        <h2>Página Dos</h2>
+                        <a class="article_link"
+                            href="https://www.rtve.es/play/videos/pagina-dos/antonio-lucas/6217674/" target="_blank">
+                            La obra de Jack London <br>(November 23,
+                            2021)</a>
 
                     </div>
 
@@ -463,7 +551,7 @@
                             target="blank"><img class="media_btn" src="larazon.png" alt="larazon"></a>
                         <h2>La Razón</h2>
                         <a href="https://www.larazon.es/cultura/20210821/7j2shspz3zh6zluxnwea3xhkny.html"
-                            class="article_link">Jack London: la amarga aventura del <br>alcoholismo<br> (August 8,
+                            class="article_link" target="_blank">Jack London: la amarga aventura del <br>alcoholismo<br> (August 8,
                             2021)</a>
                     </div>
 
@@ -571,13 +659,66 @@
             <img class="footer-icon" src="favicon.ico" alt="icon">
         </div>
     </section>
-    
+
     <script>
         const year = document.querySelector('.year');
         const currentYear = new Date().getFullYear();
+
+        const aboutImg = document.querySelector('.about-img');
+        const galleryText = document.querySelector('.gallery-text');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        const galleryImages = [
+            {
+                image: 'about-img-1.JPG',
+                text: 'Dr. Sanz Jiménez discusses his research at the University of Málaga'
+            },
+            {
+                image: 'about-image-2.png',
+                text: "At Madrid's Feria del Libro, Dr. Sanz Jiménez signs his books"
+
+            },
+            {
+                image: 'about-image-3.png',
+                text: 'Dr. Sanz Jiménez meets American writer Paul Auster'
+            },
+            {
+                image: 'about-img-4.jpg',
+                text: 'Dr. Sanz Jiménez in Belfast'
+            }
+        ];
+
+        let currentItem = 0;
+
+        function displayImage() {
+            let item = galleryImages[currentItem];
+
+            aboutImg.src = item.image;
+            galleryText.innerHTML = item.text;
+        }
+
+        prevBtn.addEventListener('click', function () {
+            currentItem--;
+            if (currentItem < 0) {
+                currentItem = galleryImages.length - 1;
+            }
+            displayImage()
+        })
+
+        nextBtn.addEventListener('click', function () {
+            currentItem++;
+            if (currentItem > galleryImages.length - 1) {
+                currentItem = 0;
+            }
+            displayImage()
+        })
+
+
         year.innerHTML = currentYear;
+
+
     </script>
 </body>
 
 </html>
-
