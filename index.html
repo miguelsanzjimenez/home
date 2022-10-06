@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Miguel Sanz Jiménez</title>
+    <title>Dr. Miguel Sanz Jiménez - Home</title>
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!-- CSS only -->
@@ -23,209 +23,56 @@
     <script src="https://kit.fontawesome.com/8efc22d7af.js" crossorigin="anonymous"></script>
     <style>
         body {
+            color: black;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: rgb(212, 241, 253);
             height: 100vh;
+            text-align: center;
         }
 
         html {
             scroll-behavior: smooth;
         }
 
-        h2 {
-            font-size: 2rem;
-            margin-top: 3rem;
+        h1 {
+            margin: 5px;
         }
 
-        h3 {
-            font-size: 1rem;
-        }
-
-        /*about*/
-        .profile {
-            width: 300px;
-        }
-
-        .profile_pic {
+        .homepage-container{
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
         }
 
-        .about,
-        .media,
-        .contact_container {
-            background-color: rgb(212, 241, 253);
-
+        .welcome {
+            letter-spacing: .1rem;
+            margin: 0;
         }
 
-        .about_info {
-            width: 60%;
-            text-align: left;
+        .homepage-collage {
+            max-width: 50%;
+            min-width: 300px;
         }
 
-        .button_container {
-            text-align: center;
+        .homepage-img {
+            width: 20%;
         }
 
-        .about-photos {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin: 0 auto;
-            padding: 0;
-        }
-
-        .about-img {
-            margin-top: 15px;
-            width: 280px;
-        }
-
-
-        .btn-container {
-            display: flex;
-            justify-content: center;
-        }
-
-        .gallery-btn {
-            background-color: #007bff;
-            border: none;
-            height: 40px;
-            width: 50%;
-            padding: 0 20px;
-            border-radius: 10px;
-            margin: 15px 10px;
-            text-align: center;
-            color: white;
-        }
-
-        .next {
-            padding: 0 32px;
-        }
-
-        .gallery-btn:hover {
-            background-color: #0069da;
-            cursor: pointer;
-        }
-
-        .gallery-text {
-            margin-top: 10px;
-        }
-
-
-        /*translations*/
-        .translation_title {
-            text-align: center;
-        }
-
-        .other-pic {
-            width: 300px;
-        }
-
-        .other_inner {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-        }
-
-        .other_inner_text,
-        .other_inner_pic {
-            width: 300px;
-        }
-
-        .other_inner_pic {
-            transition: .2s linear;
-        }
-
-        .other_inner_pic:hover {
-            opacity: .5;
-        }
-
-        /*books*/
-        .books,
-        .about,
-        .media,
-        .education_block,
-        .other_container {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            padding: 20px 20px;
-            margin-bottom: 1rem;
-        }
-
-
-
-        .carousel {
-            width: 300px;
-        }
-
-        /*media*/
-        .media_btn {
-            width: 200px;
-            border-radius: 50%;
-            transition: .2s linear;
-        }
-
-        .media_btn:hover {
-            opacity: .5;
-        }
-
-        .media_box {
-            text-align: center;
-        }
-
-        .media_container {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-
-        }
-
-        .media_int {
-            margin: 15px;
-        }
-
-        /*education*/
-        .education,
-        .footer {
-            text-align: center;
-        }
-
-        .uni {
-            width: 300px;
-        }
-
-        /*contact*/
-
-        .contact {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #contactForm {
-            width: 80%;
-        }
 
         /*footer*/
-        .footer {
-            background-color: rgb(39, 39, 39)
-        }
-
-        .footer-text {
-            color: #fff;
-
-        }
 
         .footer-icon {
             width: 20px;
             height: 20px;
             margin-bottom: 20px;
+        }
+
+        .nav-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0;
         }
     </style>
 </head>
@@ -238,498 +85,56 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Miguel Sanz Jiménez</a>
+            <a class="navbar-brand" href="https://chrisratsabout.github.io/home/">Miguel Sanz Jiménez</a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://chrisratsabout.github.io/home/">Home <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Translations
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#books-section">Books</a>
-                        <a class="dropdown-item" href="#hellpress-section">Hellpress</a>
-                        <a class="dropdown-item" href="#netflix-section">Netflix</a>
-                        <a class="dropdown-item" href="#plot-section">Plot 2.0</a>
-                    </div>
+                    <a class="nav-link" href="https://chrisratsabout.github.io/about/">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#media-section">Media</a>
+                    <a class="nav-link" href="https://chrisratsabout.github.io/translations/">Translations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#education-section">Education</a>
+                    <a class="nav-link" href="https://chrisratsabout.github.io/media/">Media</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact-section">Contact</a>
+                    <a class="nav-link" href="https://chrisratsabout.github.io/education/">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://chrisratsabout.github.io/gallery/">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://chrisratsabout.github.io/contact/">Contact</a>
                 </li>
             </ul>
             </form>
         </div>
     </nav>
 
-    <section id="about-section">
-        <div class="about">
-            <div class="profile_pic">
-                <br>
-                <br>
-                <img class="profile" src="perfil2022.jpg" alt="profile">
-                <p>Dr. Miguel Sanz Jiménez</p>
-            </div>
-            <div class="about_info">
-                <br>
-                <br>
-                <h2>About Dr. Sanz Jiménez</h2>
-                <p><b>Miguel Sanz Jiménez</b> es doctor en Lingüística Inglesa por la Universidad Complutense de Madrid
-                    (premio extraordinario),
-                    con una tesis acerca de las traducciones al español de las novelas de esclavitud afroamericanas.
-                    Su principal área de investigación es la traducción literaria. En concreto, se centra en el retrato
-                    de
-                    la alteridad
-                    y la literatura afroamericana. Cursó un máster de traducción literaria y un máster de enseñanza de
-                    inglés.
-                    El Dr. Sanz Jiménez se graduó en Estudios Ingleses en la Universidad Complutense de Madrid (premio
-                    nacional de fin de carrera).
-                    También se ha formado en Loyola University Chicago y la Universidad a Distancia de Madrid.
-                    En 2019, realizó una estancia de investigación en Queen’s University Belfast. Es secretario de la
-                    revista
-                    <i>Estudios de Traducción</i>, ha intervenido en varios congresos internacional sobre Estudios Ingleses y
-                    de
-                    Traducción y
-                    ha publicado en diversas revistas. Ha traducido subtítulos, relatos, ensayo y novelas. Por ejemplo,
-                    tradujo al castellano
-                    <i>El pájaro carpintero</i> (James McBride, 2017) y <i>Maldito asfalto</i> (S. A. Cosby, 2022).
-                </p><br>
-                <div class="button_container">
-                    <a href="https://dialnet.unirioja.es/servlet/autor?codigo=4381574" target="_blank"><button
-                            class="btn btn-primary btn-lg">Perfil de Dialnet</button> </a><br>
-                </div>
-
-                <br>
-                <p><b>Miguel Sanz Jiménez</b> obtained a PhD in English Linguistics at Complutense University Madrid
-                    (First
-                    Class). His dissertation
-                    studies the Spanish translations of African American neo-slave narratives. His main area of research
-                    is
-                    literary translation,
-                    particularly dealing with the portrayal of alterity and African American Literature. He holds a
-                    Master’s
-                    in this field,
-                    as well as in Teaching English as a Foreign Language. Dr. Sanz Jiménez graduated in English Studies
-                    from
-                    Complutense University
-                    (First Class Honors). He has also studied at Loyola University Chicago and Universidad a Distancia
-                    de
-                    Madrid. In 2019, he was a
-                    visiting researcher at Queen’s University Belfast. He is the Managing Editor of <i>Estudios de
-                    Traducción</i>.
-                    He has taken part in
-                    several international conferences on English and Translation Studies and has contributed to diverse
-                    journals. His work as a
-                    freelance translator includes subtitles, short stories, nonfiction, and novels. For example, he is
-                    responsible for the Spanish
-                    renderings of James McBride’s <i>The Good Lord Bird</i> (2017) and S. A. Cosby’s <i>Blacktop
-                        Wasteland</i> (2022).
-                </p>
-                <div class="button_container">
-                    <a href="https://orcid.org/0000-0001-7720-2004" target="_blank"><button
-                            class="btn btn-primary btn-lg">ORCID</button> </a>
-                </div>
-
-            </div>
-            <div class="about about-photos">
-                <div class="about-photos-top-container">
-                    <h2>Gallery</h2>
-
-                    <img class="about-img" src="about-img-1.JPG" alt="about-1">
-
-
-                </div>
-
-                <p class="gallery-text">Dr. Sanz Jiménez discusses his research at the University of Málaga</p>
-                <div class="btn-container">
-                    <button class="gallery-btn prev">Previous</button>
-                    <button class="gallery-btn next">Next</button>
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-
-    <section id="translations-section">
-        <div class="translation_title">
-            <h2>Translations</h2>
-        </div>
-    </section>
-
-    <section id="books-section">
-        <div class="books">
-            <div class="books_info">
-                <h2>Books</h2>
-                <br>
-                <a href="https://www.trinivergaraediciones.com/Thriller+++Novela+Negra/Crimen+y+misterio++Novela+negra/Maldito+asfalto/2203ES"
-                    target="_blank">
-                    <h3>Maldito asfalto</h3>
-                </a>
-
-                <p>S.A. Cosby</p>
-                <br>
-                <a href="https://www.guillermoescolareditor.com/libro/john-barleycorn_124280/" target="_blank">
-                    <h3>John Barleycorn: Memorias de un alcohólico</h3>
-                </a>
-                <p>Jack London</p>
-                <br>
-                <a href="https://www.hojadelata.net/tienda/democracy-now/" target="_blank">
-                    <h3>Democracy Now!</h3>
-                </a>
-                <p>Amy Goodman</p>
-                <br>
-                <a href="https://labibliotecadecarfax.com/producto/no-mires-ahora-y-otros-relatos/" target="_blank">
-                    <h3>No mires ahora y otros relatos</h3>
-                </a>
-                <p>Daphne DuMaurier</p>
-                <br>
-                <a href="https://www.hojadelata.net/tienda/el-pajaro-carpintero/" target="_blank">
-                    <h3>El pájaro carpintero</h3>
-                </a>
-                <p>James McBride</p>
-
-            </div>
-            <div class="carousel_container">
-                <br>
-                <br>
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="https://www.trinivergaraediciones.com/Thriller+++Novela+Negra/Crimen+y+misterio++Novela+negra/Maldito+asfalto/2203ES"
-                                    target="_blank">
-                                    <img id="carousel_pic" class="d-block w-100" src="maldito-asfalto.png"
-                                        alt="maldito">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="https://www.guillermoescolareditor.com/libro/john-barleycorn_124280/"
-                                    target="_blank">
-                                    <img id="carousel_pic" class="d-block w-100" src="memorias.jpeg" alt="memorias">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="https://www.hojadelata.net/tienda/democracy-now/" target="_blank">
-                                    <img id="carousel_pic" class="d-block w-100" src="democracy.jpeg" alt="democracy">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="https://labibliotecadecarfax.com/producto/no-mires-ahora-y-otros-relatos/"
-                                    target="_blank">
-                                    <img id="carousel_pic" class="d-block w-100" src="no-mires.jpeg" alt="no-mires">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="https://www.hojadelata.net/tienda/el-pajaro-carpintero/" target="_blank">
-                                    <img id="carousel_pic" class="d-block w-100" src="pajaro-carpintero.jpeg"
-                                        alt="carpintero">
-                                </a>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section id="hellpress-section">
-        <div class="other_container">
-            <div class="other_inner_text">
-                <h2>Hellpress</h2>
-                <p>Dr. Sanz Jiménez has collaborated with <i>Hellpress.com</i>, a Heavy Metal and Hard Rock news
-                    website. He has
-                    translated many interviews with international metal musicians into Spanish. More of his interviews
-                    can
-                    be found <a href="https://www.hellpress.com/?s=%22sanz+jim%C3%A9nez%22" target="blank">here</a>.</p>
-            </div>
-
-            <div class="other_inner_pic">
-                <br>
-                <br>
-                <a href="https://www.hellpress.com/?s=%22sanz+jim%C3%A9nez%22" target="blank"><img class="other-pic"
-                        src="hellpress1.png" alt="hellpress"></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="netflix-section">
-        <div class="other_container">
-            <div class="other_inner_text">
-                <h2>Netflix</h2>
-                <p>Additionally, he has translated subtitles for Netflix, the leading streaming service. The TV shows he
-                    has
-                    translated include the true crime <em>Fatal Attaction</em>. </p>
-            </div>
-
-            <div class="other_inner_pic">
-                <br>
-                <br>
-                <a href="subtitulos.JPG" target="blank"><img class="other-pic" src="subtitulos.JPG" alt="subtitles"></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="plot-section">
-        <div class="other_container">
-            <div class="other_inner_text">
-                <h2>Comics</h2>
-                <p>Dr. Sanz Jiménez has shown interest in comic-books. For the magazine <i>Plot 2.0.</i>, he has
-                    translated comic
-                    strips and interviews with renowned cartoonists. </p>
-            </div>
-
-            <div class="other_inner_pic">
-                <br>
-                <br>
-                <a href="dateline.jpg" target="blank"><img class="other-pic" src="dateline.jpg" alt="dateline"></a>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="media-section">
-
-        <div class="media">
-
-            <div class="media_box">
-                <h2>Media</h2>
-                <p>Dr. Sanz Jiménez has appeared in various articles and podcasts.</p>
-                <div class="media_container">
-
-                    <div class="media_int">
-                        <a href="https://elpais.com/cultura/elemental/2022-07-29/la-mejor-lectura-de-verano-20-novelas-negras-analizadas-y-comentadas.html"
-                            target="_blank"><img class="media_btn" src="elpais.png" alt="elpais"></a>
-                        <h2>El País</h2>
-                        <a class="article_link"
-                            href="https://elpais.com/cultura/elemental/2022-07-29/la-mejor-lectura-de-verano-20-novelas-negras-analizadas-y-comentadas.html" target="_blank">La
-                            mejor lectura de verano: 20 novelas <br>negras analizadas y comentadas <br>(July 28,
-                            2022)</a>
-
-                    </div>
-
-
-                    <div class="media_int">
-                        <a href="https://www.rtve.es/play/videos/pagina-dos/antonio-lucas/6217674/"
-                            target="_blank"><img class="media_btn" src="pagina-dos.jpeg" alt="pagina-dos"></a>
-                        <h2>Página Dos</h2>
-                        <a class="article_link"
-                            href="https://www.rtve.es/play/videos/pagina-dos/antonio-lucas/6217674/" target="_blank">
-                            La obra de Jack London (16:58-18:33)<br>(November 23,
-                            2021)</a>
-
-                    </div>
-
-                    <div class="media_int">
-                        <a href="https://www.larazon.es/cultura/20210821/7j2shspz3zh6zluxnwea3xhkny.html"
-                            target="blank"><img class="media_btn" src="larazon.png" alt="larazon"></a>
-                        <h2>La Razón</h2>
-                        <a href="https://www.larazon.es/cultura/20210821/7j2shspz3zh6zluxnwea3xhkny.html"
-                            class="article_link" target="_blank">Jack London: la amarga aventura del <br>alcoholismo<br> (August 8,
-                            2021)</a>
-                    </div>
-
-                    <div class="media_int">
-                        <a href="https://open.spotify.com/episode/7obhJCJ0DnWJ1Y0vXkvlqY" target="blank"><img
-                                class="media_btn" src="spotify.png" alt="spotify"></a>
-                        <h2>Radio Uruguay</h2>
-                        <a href="https://open.spotify.com/episode/7obhJCJ0DnWJ1Y0vXkvlqY" class="article_link"
-                            target="blank">Miguel Sanz Jiménez y su traducción <br>de "El pájaro carpintero" <br>(May
-                            2021)</a>
-                    </div>
-
-                    <div class="media_int">
-                        <a href="https://www.elsaltodiario.com/literatura/traduccion-literaria-problemas-condiciones-laborales"
-                            target="blank"> <img class="media_btn" src="elsalto.png" alt="elsalto"></a>
-                        <h2>El Salto</h2>
-                        <a href="https://www.elsaltodiario.com/literatura/traduccion-literaria-problemas-condiciones-laborales"
-                            class="article_link" target="blank">Traducción literaria: el trabajo de <br>llevar a otro
-                            idioma las páginas <br>de una novela <br>(June 20, 2020)</a>
-                    </div>
-
-                    <div class="media_int">
-                        <a href="https://www.rtve.es/play/videos/pagina-dos/pagina-dos-javier-marias/4247365/"
-                            target="_blank"><img class="media_btn" src="pagina-dos.jpeg" alt="pagina-dos"></a>
-                        <h2>Página Dos</h2>
-                        <a class="article_link"
-                            href="https://www.rtve.es/play/videos/pagina-dos/pagina-dos-javier-marias/4247365/" target="_blank">
-                            <i>El pájaro carpintero</i> es una <br>obra divertidísima (20:00-21:10) <br>(October 3, 2017)</a>
-
-                    </div>
-
-
-                    <div class="media_int">
-                        <a href="https://www.infolibre.es/cultura/los-diablos-azules/reirse-cadenas_1_1145769.html"
-                            target="blank"><img class="media_btn" src="infolibre.png" alt="infolibre"></a>
-                        <h2>infoLibre</h2>
-                        <a href="https://www.infolibre.es/cultura/los-diablos-azules/reirse-cadenas_1_1145769.html"
-                            class="article_link" target="blank">Reírse de las cadenas<br>(September 29, 2017)</a>
-                    </div>
-
-                    <div class="media_int">
-                        <a href="https://www.indienauta.com/pajaro-carpintero-james-mcbride-hoja-lata-2017/"
-                            target="blank"><img class="media_btn" src="indienauta.png" alt="indienauta"></a>
-                        <h2>Indienauta</h2>
-                        <a href="https://www.indienauta.com/pajaro-carpintero-james-mcbride-hoja-lata-2017/"
-                            class="article_link" target="blank">El pájaro carpintero, James McBride<br>(September 26,
-                            2017)</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="education-section">
-        <div class="education">
+    <section id="homepage">
+        <div class="homepage-container">
             <br>
-            <h2>Education</h2>
-            <div class="education_block">
-                <img class="uni" src="complutense.png" alt="complutense">
-                <img class="uni" src="queens.png" alt="queens">
-                <img class="uni" src="loyola.jpeg" alt="loyola">
-                <img class="uni" src="udima.jpeg" alt="udima">
-            </div>
-        </div>
-    </section>
-
-
-    <section id="contact-section">
-        <div class="contact_container">
-
-            <div class="contact">
-                <h2>Contact</h2>
-                <!-- Bootstrap 5 starter form -->
-
-                <form id="contactForm" action="https://formsubmit.co/887e48366771d155e75491bc9a264ceb" method="POST">
-
-                    <!-- Name input -->
-                    <div class="mb-3">
-                        <label class="form-label" for="name">Name</label>
-                        <input class="form-control" id="name" type="text" name="Name" placeholder="Name" required />
-                    </div>
-
-                    <!-- Email address input -->
-                    <div class="mb-3">
-                        <label class="form-label" for="emailAddress">Email Address</label>
-                        <input class="form-control" id="emailAddress" type="email" name="Email"
-                            placeholder="Email Address" required />
-                    </div>
-
-                    <!-- Message input -->
-                    <div class="mb-3">
-                        <label class="form-label" for="message">Message</label>
-                        <textarea class="form-control" id="message" type="text" name="Message" placeholder="Message"
-                            style="height: 10rem;"></textarea>
-                    </div>
-
-                    <!-- Form submit button -->
-                    <div class="d-grid">
-                        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
-                    </div>
-                    <br>
-                    <br>
-                    <input type="hidden" name="_next" value="https://miguelsanzjimenez.github.io/thanks">
-
-                </form>
-
-            </div>
-        </div>
-
-    </section>
-
-    <section id="footer-section">
-        <div class="footer">
             <br>
+            <br>
+            <p class="welcome">WELCOME TO THE WEBSITE OF</p>
+            <h1>Dr. Miguel Sanz Jiménez</h1>
+            <img class="homepage-collage" src="./home-collage.jpg">
             <p class="footer-text">Copyright &#169; <span class="year">2002</span> | Miguel Sanz Jiménez</p>
             <img class="footer-icon" src="favicon.ico" alt="icon">
         </div>
+
     </section>
 
     <script>
         const year = document.querySelector('.year');
         const currentYear = new Date().getFullYear();
 
-        const aboutImg = document.querySelector('.about-img');
-        const galleryText = document.querySelector('.gallery-text');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
-
-        const galleryImages = [
-            {
-                image: 'about-img-1.JPG',
-                text: 'Dr. Sanz Jiménez discusses his research at the University of Málaga'
-            },
-            {
-                image: 'about-image-2.png',
-                text: "At Madrid's Feria del Libro, Dr. Sanz Jiménez signs his books"
-
-            },
-            {
-                image: 'about-image-3.png',
-                text: 'Dr. Sanz Jiménez meets American writer Paul Auster'
-            },
-            {
-                image: 'about-img-4.jpg',
-                text: 'Dr. Sanz Jiménez in Belfast'
-            }
-        ];
-
-        let currentItem = 0;
-
-        function displayImage() {
-            let item = galleryImages[currentItem];
-
-            aboutImg.src = item.image;
-            galleryText.innerHTML = item.text;
-        }
-
-        prevBtn.addEventListener('click', function () {
-            currentItem--;
-            if (currentItem < 0) {
-                currentItem = galleryImages.length - 1;
-            }
-            displayImage()
-        })
-
-        nextBtn.addEventListener('click', function () {
-            currentItem++;
-            if (currentItem > galleryImages.length - 1) {
-                currentItem = 0;
-            }
-            displayImage()
-        })
-
-
         year.innerHTML = currentYear;
-
-
     </script>
+
 </body>
 
 </html>
