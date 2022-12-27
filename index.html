@@ -51,14 +51,61 @@
             margin: 0;
         }
 
-        .homepage-collage {
-            max-width: 50%;
+                /* collage */
+
+                .collage-container {
+            max-width: 40%;
             min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .homepage-img {
-            width: 20%;
+        .top-row,
+        .bottom-row {
+            display: flex;
+            justify-content: center;
         }
+
+        .collage-photo {
+            height: 33%;
+            width: 33%;
+        }
+
+        .collage-cover {
+            opacity: .5;
+            height: 140px;
+            margin: 10px;
+        }
+
+        .collage-cover:hover {
+            transform: scale(1.1);
+            transition: ease-in, .3s;
+            transition: ease-out, .3s;
+            opacity: 1;
+            transition: linear, .3s;
+            box-shadow:
+                inset 0 0 20px #fff,
+                /* inner white */
+                inset 20px 0 20px rgb(4, 58, 120),
+                /* inner left magenta short */
+                inset -20px 0 20px rgb(4, 58, 120),
+                /* inner right cyan short */
+                inset 20px 0 60px rgb(4, 58, 120),
+                /* inner left magenta broad */
+                inset -20px 0 60px rgb(4, 58, 120),
+                /* inner right cyan broad */
+                0 0 30px #fff,
+                /* outer white */
+                -10px 0 20px rgb(4, 58, 120),
+                /* outer left magenta */
+                10px 0 20px rgb(4, 58, 120);
+            /* outer right cyan */
+
+        }
+
 
 
         /*footer*/
@@ -121,7 +168,34 @@
             <br>
             <p class="welcome">WELCOME TO THE WEBSITE OF</p>
             <h1>Dr. Miguel Sanz Jiménez</h1>
-            <img class="homepage-collage" src="./home-collage.jpg">
+            <section class="collage-container">
+                <div class="top-row">
+                    <div class="collage-photo">
+                        <a href="https://www.guillermoescolareditor.com/libro/john-barleycorn_124280/" target="blank"><img
+                                class="collage-cover" src="memorias.jpg"></a>
+                    </div>
+                    <div class="collage-photo">
+                        <a href="https://www.trinivergaraediciones.com/Thriller+++Novela+Negra/Crimen+y+misterio++Novela+negra/Maldito+asfalto/2203ES"
+                            target="_blank"><img class="collage-cover" src="maldito.jpg"></a>
+                    </div>
+                </div>
+                <div class="bottom-row">
+                    <div class="collage-photo">
+                        <a href="https://labibliotecadecarfax.com/producto/no-mires-ahora-y-otros-relatos/" target="blank"><img
+                                class="collage-cover" src="nomires.jpg"></a>
+                    </div>
+                    <div class="collage-photo">
+                        <a href="https://www.hojadelata.net/tienda/democracy-now/" target="blank"><img class="collage-cover"
+                                src="democracy.jpg"></a>
+        
+                    </div>
+                    <div class="collage-photo">
+                        <a href="https://www.hojadelata.net/tienda/el-pajaro-carpintero/" target="blank"><img
+                                class="collage-cover" src="pajaro.jpg"></a>
+        
+                    </div>
+                </div>
+            </section>
             <p class="footer-text">Copyright &#169; <span class="year">2002</span> | Miguel Sanz Jiménez</p>
             <img class="footer-icon" src="favicon.ico" alt="icon">
         </div>
