@@ -135,18 +135,7 @@
     <h1>Dr. Miguel Sanz Jiménez</h1>
     <div class="container">
         <div class="cover-container">
-            <a href="#"
-            target="_blank"><img class="cover" src="lagrimas.jpeg"></a>
-            <a href="https://www.trinivergaraediciones.com/Thriller+++Novela+Negra/Crimen+y+misterio++Novela+negra/Maldito+asfalto/2203ES"
-                target="_blank"><img class="cover" src="maldito.jpg"></a>
-            <a href="https://www.guillermoescolareditor.com/libro/john-barleycorn_124280/" target="blank"><img
-                    class="cover" src="memorias.jpg"></a>
-            <a href="https://labibliotecadecarfax.com/producto/no-mires-ahora-y-otros-relatos/" target="blank"><img
-                    class="cover" src="nomires.jpg"></a>
-            <a href="https://www.hojadelata.net/tienda/democracy-now/" target="blank"><img class="cover"
-                    src="democracy.jpg"></a>
-            <a href="https://www.hojadelata.net/tienda/el-pajaro-carpintero/" target="blank"><img class="cover"
-                    src="pajaro.jpg"></a>
+            <a href="#" target="_blank"><img class="cover" src="lagrimas.jpeg"></a>
         </div>
     </div>
     <div class="footer">
@@ -159,6 +148,53 @@
         const currentYear = new Date().getFullYear();
 
         year.innerHTML = currentYear;
+
+        const coverContainer = document.querySelector(".cover-container");
+
+        window.addEventListener('DOMContentLoaded', function () {
+            displayCovers(books);
+        })
+
+        function displayCovers(arr) {
+            let coversMap = arr.map(function(item){
+                return `<a href="${item.link}" target="_blank"><img class="cover" src="${item.image}"></a>`
+            })
+            coversMap = coversMap.join("");
+            coverContainer.innerHTML = coversMap;
+        }
+
+        const books = [
+            {
+                id: 1,
+                image: "lagrimas.jpeg",
+                link: "#"
+            },
+            {
+                id: 2,
+                image: "maldito.jpg",
+                link: "https://www.trinivergaraediciones.com/Thriller+++Novela+Negra/Crimen+y+misterio++Novela+negra/Maldito+asfalto/2203ES"
+            },
+            {
+                id: 3,
+                image: "memorias.jpg",
+                link: "https://www.guillermoescolareditor.com/libro/john-barleycorn_124280/"
+            },
+            {
+                id: 4,
+                image: "nomires.jpg",
+                link: "https://labibliotecadecarfax.com/producto/no-mires-ahora-y-otros-relatos/"
+            },
+            {
+                id: 5,
+                image: "democracy.jpg",
+                link: "https://www.hojadelata.net/tienda/democracy-now/"
+            },
+            {
+                id: 6,
+                image: "pajaro.jpg",
+                link: "https://www.hojadelata.net/tienda/el-pajaro-carpintero/"
+            }
+        ]
     </script>
 
 
