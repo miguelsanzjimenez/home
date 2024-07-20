@@ -46,7 +46,7 @@
 
 
         .cover-container {
-            width: 60%;
+            width: 80%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -156,7 +156,7 @@
         })
 
         function displayCovers(arr) {
-            let coversMap = arr.map(function(item){
+            let coversMap = arr.map(function (item) {
                 return `<a href="${item.link}" target="_blank"><img class="cover" src="${item.image}"></a>`
             })
             coversMap = coversMap.join("");
@@ -166,51 +166,61 @@
         const books = [
             {
                 id: 1,
-                image: "reina-pirata.jpg",
-                link: "https://fandogamia.com/moztros/754-la-reina-pirata.html"
+                image: "presos.jpg",
+                link: "https://tienda.nocturnaediciones.com/collections/noches-negras/products/la-liga-de-los-presos-nana-kwame-adjei-brenyah"
             },
             {
                 id: 2,
-                image: "ninjak.jpg",
-                link: "#"
+                image: "esquadron.jpg",
+                link: "https://www.moztros.com/producto/el-escuadron-asesino-de-monstruos/"
             },
             {
                 id: 3,
-                image: "la-parcela.jpg",
-                link: "#"
+                image: "reina-pirata.jpg",
+                link: "https://www.moztros.com/producto/reina-pirata/"
             },
             {
                 id: 4,
-                image: "odinn.jpg",
-                link: "https://fandogamia.com/moztros/721-el-ojo-de-odinn.html"
+                image: "ninjak.jpg",
+                link: "https://www.moztros.com/producto/ninjak-super-asesinos/"
             },
             {
                 id: 5,
+                image: "la-parcela.jpg",
+                link: "https://www.moztros.com/producto/la-parcela/"
+            },
+            {
+                id: 6,
+                image: "odinn.jpg",
+                link: "https://www.moztros.com/producto/el-ojo-de-odinn/"
+            },
+            {
+                id: 7,
                 image: "lagrimas.jpeg",
                 link: "https://www.trinivergaraediciones.com/Thriller+++Novela+Negra/Crimen+y+misterio++Novela+negra/L%c3%a1grimas+como+navajas/202309ES"
             },
             {
-                id: 6,
+                id: 8,
                 image: "maldito.jpg",
                 link: "https://www.trinivergaraediciones.com/Thriller+++Novela+Negra/Crimen+y+misterio++Novela+negra/Maldito+asfalto/2203ES"
             },
             {
-                id: 7,
+                id: 9,
                 image: "memorias.jpg",
                 link: "https://www.guillermoescolareditor.com/libro/john-barleycorn_124280/"
             },
             {
-                id: 8,
+                id: 10,
                 image: "nomires.jpg",
                 link: "https://labibliotecadecarfax.com/producto/no-mires-ahora-y-otros-relatos/"
             },
             {
-                id: 9,
+                id: 11,
                 image: "democracy.jpg",
                 link: "https://www.hojadelata.net/tienda/democracy-now/"
             },
             {
-                id: 10,
+                id: 12,
                 image: "pajaro.jpg",
                 link: "https://www.hojadelata.net/tienda/el-pajaro-carpintero/"
             }
